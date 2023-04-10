@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bai 1 Lab 7</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/d4df7bd0fd.js" crossorigin="anonymous"></script>
+    <style>
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark" style="height: 30px;">
+        <div class="container-fluid">
+            <ul class="navbar-nav float-start">
+                <li class="nav-item">
+                    <a class=" text-white nav-link active" href="#">HELP</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" text-white nav-link" href="#"><i class="fa-solid fa-phone-volume"></i> 0335187926</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav float-end">
+                <li class="nav-item">
+                    <a class=" text-white nav-link active" href="#">My Accout</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" text-white nav-link" href="#">Sign in</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" text-white nav-link" href="#">Create accout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-sm  navbar-dark" style="background-color: rgb(28, 121, 28);">
+        <div class="container-fluid">
+            <ul class="navbar-nav float-start">
+                <li class="nav-item">
+                    <a class=" text-white nav-link active" href="#" style="font-size: large;">
+                        <dt>TH SHOP</dt>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class=" text-white nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        New Product
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Hoodie</a></li>
+                        <li><a class="dropdown-item" href="#">T-Shirt</a></li>
+                        <li><a class="dropdown-item" href="#">Sort</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Shop
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Hoodie</a></li>
+                        <li><a class="dropdown-item" href="#">T-Shirt</a></li>
+                        <li><a class="dropdown-item" href="#">Sort</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Pages
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Hoodie</a></li>
+                        <li><a class="dropdown-item" href="#">T-Shirt</a></li>
+                        <li><a class="dropdown-item" href="#">Sort</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        All Link Pages
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Hoodie</a></li>
+                        <li><a class="dropdown-item" href="#">T-Shirt</a></li>
+                        <li><a class="dropdown-item" href="#">Sort</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class=" text-white nav-link" href="#">Page</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav float-end">
+                <li class="nav-item">
+                    <a class=" text-white nav-link active" href="#"><i class="fa-sharp fa-solid fa-cart-plus"></i>
+                        Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" text-white nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i> Tìm kiếm</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Category</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Cart</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container mt-3">
+        <p class="float-start"><i class="fa-solid fa-cart-shopping text-lg-start" "></i>  Shopping Cart</p>
+      </div>
+                <div class=" container">
+                <table id="cart" class="table table-hover table-condensed">
+                    <thead>
+                        <tr>
+                            <th style="width:50%">Tên sản phẩm</th>
+                            <th style="width:10%">Giá</th>
+                            <th style="width:8%">Số lượng</th>
+                            <th style="width:22%" class="text-center">Thành tiền</th>
+                            <th style="width:10%"> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-th="Product">
+                                <div class="row">
+                                    <div class="col-sm-2 hidden-xs"><img
+                                            src="images/2.jpg"
+                                            alt="Sản phẩm 1" class="img-responsive" width="100">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <h4 class="nomargin">Sản phẩm 1</h4>
+                                        <p>Mô tả của sản phẩm 1</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td data-th="Price">200.000 đ</td>
+                            <td data-th="Quantity"><input class="form-control text-center" value="1" type="number"
+                                    fdprocessedid="kldl1j">
+                            </td>
+                            <td data-th="Subtotal" class="text-center">200.000 đ</td>
+                            <td class="actions" data-th="">
+                                <button class="btn btn-info btn-sm" fdprocessedid="d1cq9"><i class="fa fa-edit"></i>
+                                </button>
+                                <button class="btn btn-danger btn-sm" fdprocessedid="tj1g9c"><i
+                                        class="fa fa-trash-o"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="Product">
+                                <div class="row">
+                                    <div class="col-sm-2 hidden-xs"><img
+                                            src="images/1.jpg"
+                                            alt="Sản phẩm 1" class="img-responsive" width="100">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <h4 class="nomargin">Sản phẩm 2</h4>
+                                        <p>Mô tả của sản phẩm 2</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td data-th="Price">300.000 đ</td>
+                            <td data-th="Quantity"><input class="form-control text-center" value="1" type="number"
+                                    fdprocessedid="80xitf">
+                            </td>
+                            <td data-th="Subtotal" class="text-center">300.000 đ</td>
+                            <td class="actions" data-th="">
+                                <button class="btn btn-info btn-sm" fdprocessedid="7m971s"><i class="fa fa-edit"></i>
+                                </button>
+                                <button class="btn btn-danger btn-sm" fdprocessedid="nutkc"><i
+                                        class="fa fa-trash-o"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="visible-xs">
+                            <td class="text-center"><strong>Tổng 200.000 đ</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://hocwebgiare.com/" class="btn btn-warning"><i
+                                        class="fa fa-angle-left"></i> Tiếp tục mua hàng</a>
+                            </td>
+                            <td colspan="2" class="hidden-xs"> </td>
+                            <td class="hidden-xs text-center"><strong>Tổng tiền 500.000 đ</strong>
+                            </td>
+                            <td><a href="http://hocwebgiare.com/" class="btn btn-success btn-block">Thanh toán <i
+                                        class="fa fa-angle-right"></i></a>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+    </div>
+    <footer class="text-center text-lg-start text-muted p-4">
+        <div class="container text-center text-md-start mt-5 ">
+            <div class="row mt-3">
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        PRODUCT
+                    </h6>
+                    <hr>
+                    <p>Giày nam</p>
+                    <p>Giày nữ</p>
+                    <p>Phụ kiện</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        ABOUT
+
+                    </h6>
+                    <hr>
+                    <p>Dứa tuyển dụng</p>
+                    <p>Liên hệ nhượng quyền</p>
+                    <p>Về Ananas</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        HELP
+
+                    </h6>
+                    <hr>
+                    <p>FAQs</p>
+                    <p>Bảo mật thông tin</p>
+                    <p>Chính sách chung</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        CONTACT
+
+                    </h6>
+                    <hr>
+                    <p>Email góp ý</p>
+                    <p>Hotline</p>
+                    <p>0963 429 749</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        SUPPORT
+
+                    </h6>
+                    <hr>
+                    <p>Đăng kí nhận email</p>
+                    <input style="background-color: blanchedalmond;" class="" type="text" name="" id=""
+                        placeholder="Tìm kiếm">
+                    <p><i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-twitter"></i> <i
+                            class="fa-brands fa-facebook"></i></p>
+                </div>
+            </div>
+        </div>
+        <div class="p-4 text-center text-white bg-success">
+            Copyright © 2023 Ananas. All rights reserved</div>
+    </footer>
+
+</body>
+
+</html>
